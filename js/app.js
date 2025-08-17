@@ -10,7 +10,7 @@ const menuItems = [
         name: 'Classic Khulhad Chai',
         description: 'Traditional masala chai served in authentic clay cup',
         price: 25,
-        image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg',
+        image: '/assets/images/Khulhad-chai.jpg',
         category: 'chai',
         popular: true,
         rating: 4.8
@@ -20,7 +20,7 @@ const menuItems = [
         name: 'Ginger Adrak Chai',
         description: 'Spicy ginger chai perfect for monsoons',
         price: 30,
-        image: 'https://images.pexels.com/photos/1475554/pexels-photo-1475554.jpeg',
+        image: '/assets/images/adrak.webp',
         category: 'chai',
         popular: true,
         rating: 4.7
@@ -30,14 +30,14 @@ const menuItems = [
         name: 'Cardamom Elaichi Chai',
         description: 'Aromatic cardamom infused premium chai',
         price: 35,
-        image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg',
+        image: '/assets/images/elichi.avif',
         category: 'chai',
         popular: false,
         rating: 4.6
     },
     {
         id: '4',
-        name: 'Kulhad Coffee',
+        name: 'Coffee',
         description: 'Rich filter coffee in traditional clay cup',
         price: 40,
         image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
@@ -50,7 +50,7 @@ const menuItems = [
         name: 'Samosa (2 pcs)',
         description: 'Crispy triangular pastry with spiced potato filling',
         price: 30,
-        image: 'https://images.pexels.com/photos/14737/pexels-photo.jpg',
+        image: '/assets/images/samosa.jpeg',
         category: 'snacks',
         popular: true,
         rating: 4.4
@@ -60,7 +60,7 @@ const menuItems = [
         name: 'Aloo Tikki',
         description: 'Crispy potato patties with chutneys',
         price: 35,
-        image: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg',
+        image: '/assets/images/aloo-tiki.jpg',
         category: 'snacks',
         popular: false,
         rating: 4.3
@@ -70,7 +70,7 @@ const menuItems = [
         name: 'Bread Pakora',
         description: 'Deep-fried bread slices with spiced filling',
         price: 25,
-        image: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg',
+        image: '/assets/images/bread.jpeg',
         category: 'snacks',
         popular: false,
         rating: 4.2
@@ -80,10 +80,30 @@ const menuItems = [
         name: 'Special Kulhad Lassi',
         description: 'Creamy yogurt drink served in clay cup',
         price: 45,
-        image: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg',
+        image: '/assets/images/lassi.webp',
         category: 'beverages',
         popular: true,
         rating: 4.9
+    },
+     {
+        id: '9',
+        name: 'Rasmalai',
+        description: 'Creamy yogurt served in clay cup',
+        price: 45,
+        image: '/assets/images/rasmalai.jpg',
+        category: 'beverages',
+        popular: true,
+        rating: 4.9
+    },
+    {
+         id: '10',
+        name: 'cappuccino coffee',
+        description: 'Rich filter coffee in traditional clay cup',
+        price: 40,
+        image: '/assets/images/cap2.jpeg',
+        category: 'coffee',
+        popular: false,
+        rating: 4.5
     }
 ];
 
@@ -91,55 +111,55 @@ const menuItems = [
 const galleryItems = [
     {
         id: 1,
-        url: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg',
+        url: '/assets/images/Khulhad-chai.jpg',
         title: 'Authentic Khulhad Chai',
         category: 'drinks'
     },
     {
         id: 2,
-        url: 'https://images.pexels.com/photos/1475554/pexels-photo-1475554.jpeg',
+        url: '/assets/images/traditional-tea.jpg',
         title: 'Traditional Tea Making',
         category: 'process'
     },
     {
         id: 3,
-        url: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+        url: '/assets/images/interior1.jpeg',
         title: 'Cozy Interior',
         category: 'ambiance'
     },
     {
         id: 4,
-        url: 'https://images.pexels.com/photos/14737/pexels-photo.jpg',
+        url: '/assets/images/bread.jpeg',
         title: 'Fresh Snacks',
         category: 'food'
     },
     {
         id: 5,
-        url: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg',
+        url: '/assets/images/customer.jpeg',
         title: 'Happy Customers',
         category: 'customers'
     },
     {
         id: 6,
-        url: 'https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg',
+        url: '/assets/images/elichi.avif',
         title: 'Masala Chai',
         category: 'drinks'
     },
     {
         id: 7,
-        url: 'https://images.pexels.com/photos/1475554/pexels-photo-1475554.jpeg',
+        url: '/assets/images/tea-leaves.jpg',
         title: 'Tea Leaves',
         category: 'process'
     },
     {
         id: 8,
-        url: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+        url: '/assets/images/outdoor.jpeg',
         title: 'Outdoor Seating',
         category: 'ambiance'
     },
     {
         id: 9,
-        url: 'https://images.pexels.com/photos/14737/pexels-photo.jpg',
+        url: '/assets/images/street.jpeg',
         title: 'Street Food',
         category: 'food'
     }
