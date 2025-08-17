@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Sutta Bar - Authentic Indian Tea Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Chai Sutta Bar</h1>
+                    <p>Authentic Indian Tea Experience</p>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About Us</a>
+                    <a href="#menu" class="nav-link" data-section="menu">Menu</a>
+                    <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </nav>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" onclick="openCartModal()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="auth-btn" onclick="openAuthModal()">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+            <a href="#about" class="mobile-nav-link" data-section="about">About Us</a>
+            <a href="#menu" class="mobile-nav-link" data-section="menu">Menu</a>
+            <a href="#gallery" class="mobile-nav-link" data-section="gallery">Gallery</a>
+            <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <video autoplay muted loop class="hero-video">
+                    <source src="Kulhad making.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Authentic <span>Chai Experience</span></h1>
+                    <p>Savor the traditional taste of India with our handcrafted khulhad chai, made with love and served with warmth.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="setActiveSection('menu')">Order Now</button>
+                        <button class="btn-secondary" onclick="setActiveSection('menu')">Explore Menu</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features -->
+            <div class="features">
+                <div class="container">
+                    <h2>Why Choose Chai Sutta Bar?</h2>
+                    <p class="subtitle">Experience the authentic taste of India with every sip</p>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3>Authentic Khulhad</h3>
+                            <p>Traditional clay cups that enhance the flavor and aroma of our premium chai</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Made with Love</h3>
+                            <p>Every cup is crafted with care using traditional recipes passed down through generations</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Premium Quality</h3>
+                            <p>Finest tea leaves and spices sourced directly from the gardens of India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Varieties of Chai</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Locations</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5★</div>
+                            <div class="stat-label">Customer Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Chai Sutta Bar</h2>
+                    <p>Born from a passion for authentic Indian chai, we bring you the true taste of India in every khulhad, crafted with traditional recipes and served with modern hospitality.</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Started in 2015 with a simple dream to share the authentic taste of Indian chai with the world. Our founders, passionate about preserving traditional brewing methods, traveled across India to learn from chai masters and collect time-tested recipes.</p>
+                        <p>Today, we serve over 50,000 happy customers with the same dedication to quality and authenticity that started our journey. Every khulhad tells a story, every sip connects you to India's rich tea culture.</p>
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="stat-value">2015</div>
+                                <div class="stat-desc">Founded</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="stat-value">50K+</div>
+                                <div class="stat-desc">Customers</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="stat-value">10+</div>
+                                <div class="stat-desc">Locations</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-card">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Traditional Brewing</h4>
+                            <p>Authentic methods passed down through generations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="values">
+                    <h3>Our Values</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h4>Authenticity</h4>
+                            <p>True to traditional recipes and brewing methods</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Quality</h4>
+                            <p>Premium ingredients sourced from the finest gardens</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community</h4>
+                            <p>Building connections over shared love for chai</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p>Committed to delivering the best chai experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Menu</h2>
+                    <p>Discover our authentic collection of teas, snacks, and beverages</p>
+                </div>
+                
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-category="all">All Items</button>
+                    <button class="filter-btn" data-category="chai">Chai</button>
+                    <button class="filter-btn" data-category="coffee">Coffee</button>
+                    <button class="filter-btn" data-category="snacks">Snacks</button>
+                    <button class="filter-btn" data-category="beverages">Beverages</button>
+                </div>
+                
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Menu items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Gallery</h2>
+                    <p>Experience the authentic atmosphere and delicious offerings at Chai Sutta Bar</p>
+                </div>
+                
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="drinks">Drinks</button>
+                    <button class="filter-btn" data-category="food">Food</button>
+                    <button class="filter-btn" data-category="ambiance">Ambiance</button>
+                    <button class="filter-btn" data-category="process">Process</button>
+                    <button class="filter-btn" data-category="customers">Customers</button>
+                </div>
+                
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery items will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or feedback? We'd love to hear from you. Get in touch with us through any of the following ways.</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                                <small>Mon-Sun: 8AM-11PM</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>hello@chaisuttabar.com</p>
+                                <small>We'll reply within 24 hours</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+91 98765 43210</p>
+                                <small>Quick support available</small>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>123 MG Road, Central Delhi</p>
+                                <small>Main Branch</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <h3>Send us a Message</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="complaint">Complaint</option>
+                                        <option value="franchise">Franchise Opportunity</option>
+                                        <option value="catering">Catering Services</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Chai Sutta Bar</h3>
+                    </div>
+                    <p>Authentic Indian chai experience served in traditional khulhad cups. Bringing you the true taste of India since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Online Ordering</a></li>
+                        <li><a href="#">Home Delivery</a></li>
+                        <li><a href="#">Catering Services</a></li>
+                        <li><a href="#">Corporate Orders</a></li>
+                        <li><a href="#">Event Planning</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <div class="contact-item-footer">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>123 MG Road</p>
+                                <p>Central Delhi, 110001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-phone"></i>
+                            <p>+91 98765 43210</p>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-envelope"></i>
+                            <p>hello@chaisuttabar.com</p>
+                        </div>
+                        <div class="contact-item-footer">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Mon - Sun</p>
+                                <p>8:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-links">
+                        <span>© 2025 Chai Sutta Bar. All rights reserved.</span>
+                        <span>•</span>
+                        <a href="#">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <div class="footer-made">
+                        <span>Made with</span>
+                        <i class="fas fa-heart"></i>
+                        <span>in India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="authTitle">Welcome Back!</h2>
+                <button class="close-btn" onclick="closeAuthModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="authForm">
+                    <div class="form-group" id="nameGroup" style="display: none;">
+                        <label for="authName">Full Name</label>
+                        <input type="text" id="authName" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="authEmail">Email Address</label>
+                        <input type="email" id="authEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="authPassword">Password</label>
+                        <input type="password" id="authPassword" name="password" required>
+                    </div>
+                    <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+                        <label for="authConfirmPassword">Confirm Password</label>
+                        <input type="password" id="authConfirmPassword" name="confirmPassword">
+                    </div>
+                    <button type="submit" class="btn-primary" id="authSubmitBtn">Sign In</button>
+                </form>
+                <div class="auth-toggle">
+                    <p id="authToggleText">Don't have an account? <button type="button" id="authToggleBtn" onclick="toggleAuthMode()">Sign Up</button></p>
+                </div>
+                <div class="demo-info">
+                    <p><strong>Demo Login:</strong><br>
+                    Email: demo@chaisuttabar.com<br>
+                    Password: password</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+                <button class="close-btn" onclick="closeCartModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                </div>
+                <div class="cart-total">
+                    <div class="total-row">
+                        <span>Total: ₹<span id="cartTotal">0</span></span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-secondary" onclick="clearCart()">Clear Cart</button>
+                        <button class="btn-primary" onclick="proceedToCheckout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Complete Your Order</h2>
+                <button class="close-btn" onclick="closeOrderModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="order-section">
+                        <h3>Delivery Option</h3>
+                        <div class="delivery-options">
+                            <label class="delivery-option">
+                                <input type="radio" name="deliveryType" value="delivery" checked>
+                                <div class="option-content">
+                                    <i class="fas fa-truck"></i>
+                                    <div>
+                                        <div class="option-title">Home Delivery</div>
+                                        <div class="option-desc">₹20 delivery fee</div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="deliveryType" value="pickup">
+                                <div class="option-content">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <div class="option-title">Store Pickup</div>
+                                        <div class="option-desc">Free pickup</div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="order-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderPhone">Phone Number *</label>
+                                <input type="tel" id="orderPhone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderEmail">Email Address</label>
+                                <input type="email" id="orderEmail" name="email" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-section" id="addressSection">
+                        <h3>Delivery Address</h3>
+                        <div class="form-group">
+                            <textarea id="orderAddress" name="address" rows="3" placeholder="Enter your complete delivery address..." required></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="order-section">
+                        <h3>Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="online" checked>
+                                <div class="option-content">
+                                    <i class="fas fa-credit-card"></i>
+                                    <div>
+                                        <div class="option-title">Online Payment</div>
+                                        <div class="option-desc">Card/UPI/Net Banking</div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cod">
+                                <div class="option-content">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <div>
+                                        <div class="option-title">Cash on Delivery</div>
+                                        <div class="option-desc">Pay when you receive</div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="order-section">
+                        <h3>Special Instructions</h3>
+                        <div class="form-group">
+                            <textarea id="orderInstructions" name="instructions" rows="2" placeholder="Any special requests or instructions..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal (<span id="orderItemCount">0</span> items)</span>
+                            <span>₹<span id="orderSubtotal">0</span></span>
+                        </div>
+                        <div class="summary-row" id="deliveryFeeRow">
+                            <span>Delivery Fee</span>
+                            <span>₹<span id="deliveryFee">20</span></span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>₹<span id="orderTotal">0</span></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary full-width">
+                        Place Order - ₹<span id="orderTotalBtn">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Order Placed!</h2>
+                <p>Your order has been successfully placed. You will receive a confirmation shortly.</p>
+                <p class="order-id">Order ID: #CSB<span id="orderIdNumber"></span></p>
+                <button class="btn-primary" onclick="closeSuccessModal()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
