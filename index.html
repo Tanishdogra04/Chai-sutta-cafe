@@ -199,6 +199,221 @@
                 </div>
             </div>
         </section>
+       <!-- Franchise Section (updated) -->
+<section id="franchise" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Franchise Opportunities</h2>
+      <p>Join the Chai Sutta Bar family — bring authentic khulhad chai to your city.</p>
+    </div>
+
+    <div class="franchise-content">
+      <!-- Left: creative flip-cards -->
+      <div class="franchise-left">
+        <h3>Why Franchise With Us?</h3>
+
+        <!-- Flip cards grid -->
+        <div class="flipcards" role="list">
+          <article class="flipcard" tabindex="0" data-card="1" role="listitem" aria-labelledby="fc1-title">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fas fa-seedling"></i>
+                <h4 id="fc1-title">Proven Concept</h4>
+                <p>Time-tested recipes & high customer loyalty.</p>
+              </div>
+              <div class="flipcard-back">
+                <p>Standardized operations, easy training & consistent margins — plug-and-play business model.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flipcard" tabindex="0" data-card="2" role="listitem" aria-labelledby="fc2-title">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fas fa-tools"></i>
+                <h4 id="fc2-title">Low Setup</h4>
+                <p>Flexible formats — kiosk, cafe, cloud kitchen.</p>
+              </div>
+              <div class="flipcard-back">
+                <p>Multiple footprint options and pre-approved supplier packages for quick launch.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flipcard" tabindex="0" data-card="3" role="listitem" aria-labelledby="fc3-title">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h4 id="fc3-title">Training & Support</h4>
+                <p>End-to-end help for operations & marketing.</p>
+              </div>
+              <div class="flipcard-back">
+                <p>On-site training, SOPs, marketing assets and a dedicated success manager for your store.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flipcard" tabindex="0" data-card="4" role="listitem" aria-labelledby="fc4-title">
+            <div class="flipcard-inner">
+              <div class="flipcard-front">
+                <i class="fas fa-award"></i>
+                <h4 id="fc4-title">Strong Branding</h4>
+                <p>Ready-to-use brand assets & supplier network.</p>
+              </div>
+              <div class="flipcard-back">
+                <p>Brand guidelines, launch kit, and promotional templates to drive footfall from day one.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- CTA row -->
+        <div class="franchise-cta">
+          <button class="btn-primary" id="requestKitBtn" type="button">Request Franchise Kit</button>
+          <button class="btn-primary" id="openFranchiseApplyBtn" type="button">Apply Now</button>
+        </div>
+      </div>
+<br>
+      <!-- Right: form (unchanged structure; id preserved) -->
+      <div class="franchise-right">
+        <div class="franchise-card">
+          <h4>Apply for a franchise</h4>
+          <p>Fill the form and our team will contact you with the franchise details & investment kit.</p>
+
+          <form id="franchiseForm" class="franchise-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="frName">Full Name *</label>
+                <input id="frName" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="frEmail">Email *</label>
+                <input id="frEmail" name="email" type="email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="frPhone">Phone *</label>
+                <input id="frPhone" name="phone" type="tel" required>
+              </div>
+              <div class="form-group">
+                <label for="frCity">City *</label>
+                <input id="frCity" name="city" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="frFormat">Preferred Format</label>
+              <select id="frFormat" name="format">
+                <option value="kiosk">Kiosk</option>
+                <option value="cafe">Cafe / Store</option>
+                <option value="cloud">Cloud Kitchen</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="frMessage">Message / Notes</label>
+              <textarea id="frMessage" name="message" rows="4" placeholder="Tell us about your experience or location"></textarea>
+            </div>
+
+            <div class="form-row" style="gap:1rem;">
+              <button type="submit" class="btn-primary">Submit Application</button>
+              <button type="button" class="btn-primary" id="frResetBtn">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Careers Section -->
+<section id="careers" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Careers — Dharamshala</h2>
+      <p>Join Chai Sutta Bar in Dharamshala. We hire for customer-facing roles, kitchen staff, delivery & local management. Great entry roles available with training and growth.</p>
+    </div>
+
+    <div class="careers-grid">
+      <!-- Left: jobs list -->
+      <div class="careers-left">
+        <div class="jobs-controls">
+          <div class="jobs-filter">
+            <button class="filter-btn active" data-role="all">All</button>
+            <button class="filter-btn" data-role="front">Front of House</button>
+            <button class="filter-btn" data-role="kitchen">Kitchen</button>
+            <button class="filter-btn" data-role="delivery">Delivery</button>
+            <button class="filter-btn" data-role="management">Management</button>
+          </div>
+          <div class="jobs-search">
+            <input id="jobSearch" placeholder="Search jobs (e.g., barista, manager, delivery)"/>
+          </div>
+        </div>
+
+        <div class="jobs-grid" id="jobsGrid" role="list">
+          <!-- Job cards injected by JS; sample cards included for no-JS fallback -->
+          <article class="job-card" data-role="front" tabindex="0">
+            <h3 class="job-title">Barista / Tea Specialist</h3>
+            <div class="job-meta">Dharamshala • Full-time • ₹12,000 - ₹16,000</div>
+            <p class="job-desc">Serve chai in khulhad, manage counter, ensure hygiene & great guest experience. Training provided.</p>
+            <div class="job-actions">
+              <button class="btn-secondary apply-btn" data-job="Barista / Tea Specialist">Apply</button>
+              <button class="btn-primary" onclick="openJobDetails('Barista / Tea Specialist')">View</button>
+            </div>
+          </article>
+
+          <article class="job-card" data-role="kitchen" tabindex="0">
+            <h3 class="job-title">Kitchen Assistant</h3>
+            <div class="job-meta">Dharamshala • Full-time • ₹10,000 - ₹14,000</div>
+            <p class="job-desc">Help prepare snacks, maintain inventory and assist with daily prep. Ideal for entry level.</p>
+            <div class="job-actions">
+              <button class="btn-secondary apply-btn" data-job="Kitchen Assistant">Apply</button>
+              <button class="btn-primary" onclick="openJobDetails('Kitchen Assistant')">View</button>
+            </div>
+          </article>
+
+          <article class="job-card" data-role="delivery" tabindex="0">
+            <h3 class="job-title">Delivery Executive</h3>
+            <div class="job-meta">Dharamshala • Part-time • ₹8,000 - ₹12,000</div>
+            <p class="job-desc">Local deliveries around Dharamshala. Must have two-wheeler & valid license.</p>
+            <div class="job-actions">
+              <button class="btn-secondary apply-btn" data-job="Delivery Executive">Apply</button>
+              <button class="btn-primary" onclick="openJobDetails('Delivery Executive')">View</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right: info, benefits, map -->
+      <aside class="careers-right">
+        <div class="careers-card">
+          <h4>Why work with us — Dharamshala</h4>
+          <ul class="benefits-list">
+            <li>Free staff chai & discounts</li>
+            <li>Structured training & upskilling</li>
+            <li>Flexible shifts & competitive pay</li>
+            <li>Opportunities for growth in-store & regionally</li>
+          </ul>
+
+          <h4 style="margin-top:1rem;">How to apply</h4>
+          <ol class="apply-steps">
+            <li>Browse roles and click <strong>Apply</strong></li>
+            <li>Fill the quick form (CV optional)</li>
+            <li>Our HR will contact you for a local interview</li>
+          </ol>
+
+          <h4 style="margin-top:1rem;">Our Dharamshala Store</h4>
+          <p>Chai Sutta Bar — Maximus Mall Shop 01, Dharamshala</p>
+          <p><a href="https://www.google.com/maps/place/Chai+Sutta+Bar+%7C+Dharamshala" target="_blank" class="google-map-link">📍 View on Google Maps</a></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
 
         <!-- Menu Section -->
         <section id="menu" class="section">
@@ -262,8 +477,8 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Phone</h4>
-                                <p>+91 98765 43210</p>
-                                <small>Mon-Sun: 8AM-11PM</small>
+                                <p>+91 8278713791</p>
+                                <small>Mon-Sun: Available 24hr</small>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -282,7 +497,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>WhatsApp</h4>
-                                <p>+91 98765 43210</p>
+                                <p>+91 8278713791</p>
                                 <small>Quick support available</small>
                             </div>
                         </div>
@@ -292,7 +507,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Address</h4>
-                                <p>123 MG Road, Central Delhi</p>
+                                <p>Maximus mall shop-1 176215</p>
                                 <small>Main Branch</small>
                             </div>
                         </div>
@@ -364,11 +579,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Our Menu</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#">Franchise</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">About Us</a></li>
+                        <li><a href="#menu" class="nav-link" data-section="menu">Our Menu</a></li>
+                       <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                        <li><a href="#franchise" class="nav-link" data-section="franchise">Franchise</a></li>
+                        <li><a href="#careers" class="nav-link" data-section="careers">Careers</a></li>
                         <li><a href="#">Press</a></li>
                     </ul>
                 </div>
