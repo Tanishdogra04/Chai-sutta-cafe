@@ -1110,3 +1110,14 @@ function closeFranchiseModal() {
   recompute();
   requestAnimationFrame(step);
 })();
+
+function toggleMobileMenu() {
+    document.querySelector(".mobile-menu").classList.toggle("show");
+}
+
+// Auto-close menu when clicking any link
+document.querySelectorAll(".mobile-nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".mobile-menu").classList.remove("show");
+    });
+});
