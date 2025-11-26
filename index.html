@@ -102,6 +102,271 @@
                 </div>
             </div>
             
+            <!-- Specials Carousel (infinite auto-scroll) -->
+<div id="specialsCarousel" class="carousel-block" aria-label="Featured Specials carousel">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Specials</h2>
+      <p>Handpicked favorites served fresh every day at Chai Sutta Bar Dharamshala.</p>
+    </div>
+
+    <div class="carousel-viewport" tabindex="0" aria-roledescription="carousel" aria-label="Featured specials">
+      <div class="carousel-track">
+        <!-- Card A -->
+        <div class="carousel-card" role="group" aria-label="Signature Kulhad Chai">
+          <img src="/assets/images/signature_kulhadchai.jpg" alt="Signature Kulhad Chai" loading="lazy">
+          <div class="card-body">
+            <h4>Signature Kulhad Chai</h4>
+            <p class="muted">Slow-brewed & served in hot kulhad.</p>
+            <div class="card-foot">
+              <strong>₹30</strong>
+              <button class="btn-primary" onclick="addToCart('1')" aria-label="Order Signature Kulhad Chai">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card B -->
+        <div class="carousel-card" role="group" aria-label="Ginger Adrak Chai">
+          <img src="/assets/images/adrak-chai.webp" alt="Ginger Adrak Chai" loading="lazy">
+          <div class="card-body">
+            <h4>Ginger Adrak Chai</h4>
+            <p class="muted">Spicy & aromatic ginger blend.</p>
+            <div class="card-foot">
+              <strong>₹30</strong>
+              <button class="btn-primary" onclick="addToCart('2')" aria-label="Order Ginger Adrak Chai">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card C -->
+        <div class="carousel-card" role="group" aria-label="Elaichi Chai">
+          <img src="/assets/images/elichi.avif" alt="Elaichi Chai" loading="lazy">
+          <div class="card-body">
+            <h4>Elaichi Chai</h4>
+            <p class="muted">Cardamom-infused rich aroma.</p>
+            <div class="card-foot">
+              <strong>₹35</strong>
+              <button class="btn-primary" onclick="addToCart('3')" aria-label="Order Elaichi Chai">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card D -->
+        <div class="carousel-card" role="group" aria-label="Tandoori Chai">
+          <img src="/assets/images/Khulhad-chai.jpg" alt="Tandoori Chai" loading="lazy">
+          <div class="card-body">
+            <h4>Tandoori Chai</h4>
+            <p class="muted">Smoky, clay-roasted specialty.</p>
+            <div class="card-foot">
+              <strong>₹60</strong>
+              <button class="btn-primary" onclick="addToCart('14')" aria-label="Order Tandoori Chai">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card E -->
+        <div class="carousel-card" role="group" aria-label="Special Kulhad Lassi">
+          <img src="/assets/images/lassifeatured.webp" alt="Special Kulhad Lassi" loading="lazy">
+          <div class="card-body">
+            <h4>Special Kulhad Lassi</h4>
+            <p class="muted">Thick & refreshing yogurt drink.</p>
+            <div class="card-foot">
+              <strong>₹45</strong>
+              <button class="btn-primary" onclick="addToCart('8')" aria-label="Order Kulhad Lassi">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOTE: JS will duplicate these nodes for seamless infinite scrolling -->
+      </div> <!-- .carousel-track -->
+    </div> <!-- .carousel-viewport -->
+  </div> <!-- .container -->
+</div> <!-- #specialsCarousel -->
+<!-- Testimonials (6 cards, 2 rows × 3 columns) -->
+<div id="testimonials" class="section-block" aria-label="Customer testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>What Customers Say</h2>
+      <p>Honest reviews from chai lovers across Dharamshala & nearby towns.</p>
+    </div>
+
+    <div class="testimonials-wrap" id="testimonialsWrap">
+
+      <!-- Row 1 - Card 1 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Asha">
+          <div class="t-meta">
+            <strong class="t-name">Asha</strong>
+            <span class="t-loc">McLeod Ganj</span>
+            <div class="t-rating"><span class="stars">★★★★☆</span><span class="score">4.8</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"Best khulhad chai here! Perfect aroma & warmth. Highly recommended!"</p>
+      </article>
+
+      <!-- Row 1 - Card 2 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Raj">
+          <div class="t-meta">
+            <strong class="t-name">Raj</strong>
+            <span class="t-loc">Dharamshala</span>
+            <div class="t-rating"><span class="stars">★★★★☆</span><span class="score">4.7</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"Tandoori chai is absolutely next level. Quick service too."</p>
+      </article>
+
+      <!-- Row 1 - Card 3 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Meera">
+          <div class="t-meta">
+            <strong class="t-name">Meera</strong>
+            <span class="t-loc">Palampur</span>
+            <div class="t-rating"><span class="stars">★★★★★</span><span class="score">5.0</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"Lovely ambience and great staff. Feels like home with every sip."</p>
+      </article>
+
+      <!-- Row 2 - Card 4 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Kabir">
+          <div class="t-meta">
+            <strong class="t-name">Kabir</strong>
+            <span class="t-loc">Kangra</span>
+            <div class="t-rating"><span class="stars">★★★★☆</span><span class="score">4.6</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"Perfect spot to chill with friends. Snacks are fresh & tasty."</p>
+      </article>
+
+      <!-- Row 2 - Card 5 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Priya">
+          <div class="t-meta">
+            <strong class="t-name">Priya</strong>
+            <span class="t-loc">Sidhpur</span>
+            <div class="t-rating"><span class="stars">★★★★★</span><span class="score">5.0</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"Absolutely love their Elaichi chai! Pure taste, pure vibe."</p>
+      </article>
+
+      <!-- Row 2 - Card 6 -->
+      <article class="testimonial-card">
+        <div class="t-top">
+          <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Sameer">
+          <div class="t-meta">
+            <strong class="t-name">Sameer</strong>
+            <span class="t-loc">Bir</span>
+            <div class="t-rating"><span class="stars">★★★★☆</span><span class="score">4.9</span></div>
+          </div>
+        </div>
+        <p class="t-comment">"My go-to chai place after a long day. Amazing staff & quick service."</p>
+      </article>
+
+    </div> <!-- testimonials-wrap -->
+  </div>
+
+  <!-- Inline CSS -->
+  <style>
+    #testimonials { margin: 1.5rem 0; }
+
+    .testimonials-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    /* Cards */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      transition: 250ms ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+    }
+
+    /* Top section */
+    .t-top {
+      display:flex;
+      gap:0.9rem;
+      align-items:center;
+    }
+    .t-top img {
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+    .t-meta { display:flex; flex-direction:column; gap:0.2rem; }
+    .t-name { font-size:1rem; font-weight:700; }
+    .t-loc { font-size:0.9rem; color:#6b7280; }
+    .t-rating { font-size:0.92rem; display:flex; gap:0.4rem; align-items:center; color:#b45309; }
+    .score { color:#374151; font-weight:600; }
+
+    .t-comment { margin:0; font-size:0.96rem; color:#374151; line-height:1.45; }
+
+    /* Responsive */
+    @media (max-width:900px) {
+      .testimonials-wrap { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width:600px) {
+      .testimonials-wrap { grid-template-columns: 1fr; }
+      .t-top img { width:60px; height:60px; }
+    }
+  </style>
+
+  <!-- Inline JS (optional auto-highlight) -->
+  <script>
+    (function() {
+      const cards = document.querySelectorAll('#testimonialsWrap .testimonial-card');
+      if (!cards.length) return;
+      let i = 0;
+      let running = true;
+
+      // Auto highlight loop
+      const tick = setInterval(() => {
+        if (!running) return;
+        cards.forEach(c => c.classList.remove('highlight'));
+        cards[i].classList.add('highlight');
+        i = (i + 1) % cards.length;
+      }, 3500);
+
+      // Pause on hover/focus
+      const wrap = document.getElementById('testimonialsWrap');
+      wrap.addEventListener('mouseenter', () => running = false);
+      wrap.addEventListener('mouseleave', () => running = true);
+      wrap.addEventListener('focusin', () => running = false);
+      wrap.addEventListener('focusout', () => running = true);
+
+      // highlight style
+      const st = document.createElement('style');
+      st.textContent = `
+        #testimonialsWrap .testimonial-card.highlight {
+          transform: translateY(-8px) scale(1.01);
+          box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+        }
+      `;
+      document.head.appendChild(st);
+    })();
+  </script>
+</div>
+
+            
             <!-- Stats -->
             <div class="stats">
                 <div class="container">
@@ -125,6 +390,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
 
         <!-- About Section -->

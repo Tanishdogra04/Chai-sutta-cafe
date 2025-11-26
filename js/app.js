@@ -1058,3 +1058,55 @@ function closeFranchiseModal() {
     alert(title + '\\nDetailed job description can be added here or in a modal.');
   };
 })();
+
+/* ===== Infinite carousel auto-scroll (never stops) ===== */
+(function initInfiniteCarousel() {
+  const viewport = document.querySelector('.carousel-viewport');
+  const track = document.querySelector('.carousel-track');
+  if (!viewport || !track) return;
+
+  // Duplicate children to create seamless loop
+  const children = Array.from(track.children);
+  children.forEach(node => track.appendChild(node.cloneNode(true)));
+
+  // Measure
+  let speed = 60; // pixels per second; increase for faster scroll
+  let pos = 0;
+  let trackWidth = track.scrollWidth / 2; // original width (we duplicated once)
+  let lastTimestamp = null;
+  let running = true;
+
+  // Pause on hover or focus
+  viewport.addEventListener('mouseenter', () => running = false);
+  viewport.addEventListener('mouseleave', () => running = true);
+  viewport.addEventListener('focusin', () => running = false);
+  viewport.addEventListener('focusout', () => running = true);
+
+  function step(ts) {
+    if (lastTimestamp === null) lastTimestamp = ts;
+    const dt = (ts - lastTimestamp) / 1000; // seconds
+    lastTimestamp = ts;
+
+    if (running) {
+      pos += speed * dt;
+      if (pos >= trackWidth) {
+        // reset pos for seamless loop
+        pos = pos - trackWidth;
+      }
+      track.style.transform = `translateX(${-pos}px)`;
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // Recompute trackWidth on resize (makes responsive)
+  function recompute() {
+    // original content width = half scrollWidth because we've duplicated
+    trackWidth = track.scrollWidth / 2;
+  }
+  window.addEventListener('resize', recompute);
+
+  // Start animation
+  recompute();
+  requestAnimationFrame(step);
+})();

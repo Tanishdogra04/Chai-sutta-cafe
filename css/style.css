@@ -1441,3 +1441,125 @@ main {
   .careers-grid{ flex-direction:column; }
   .careers-right{ width:100%; }
 }
+
+/* Carousel: infinite auto-scroll */
+.carousel-block { margin: 1.25rem 0; }
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  outline: none; /* focus ring handled below */
+  padding: 0.5rem 0;
+}
+.carousel-viewport:focus { box-shadow: 0 0 0 3px rgba(180,83,9,0.12); border-radius: 6px; }
+
+/* track is a single row (no wrap) */
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  will-change: transform;
+}
+
+/* card */
+.carousel-card {
+  width: 260px; /* fixed width ensures smooth loop; adjusts well across viewports */
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+}
+.carousel-card img { width:100%; height:150px; object-fit:cover; display:block; }
+.card-body { padding:0.75rem; display:flex; flex-direction:column; gap:0.4rem; flex:1; }
+.card-body h4 { margin:0; font-size:1rem; }
+.card-body .muted { color:#6b7280; font-size:0.9rem; margin:0; }
+.card-foot { margin-top:auto; display:flex; justify-content:space-between; align-items:center; gap:0.5rem; }
+
+/* hover effect */
+.carousel-card:hover { transform: translateY(-4px); transition: transform 220ms ease; }
+
+/* Responsive: smaller cards on small screens */
+@media (max-width:700px) {
+  .carousel-card { width:200px; }
+  .carousel-card img { height:130px; }
+}
+@media (max-width:420px) {
+  .carousel-card { width:170px; }
+  .carousel-card img { height:110px; }
+}
+/* Carousel: infinite auto-scroll */
+.carousel-block { margin: 1.25rem 0; }
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  outline: none;
+  padding: 0.5rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.25rem; /* increased spacing */
+  align-items: stretch;
+  will-change: transform;
+}
+
+/* Bigger cards */
+.carousel-card {
+  width: 320px;        /* increased from 260px */
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+}
+
+/* Larger images */
+.carousel-card img {
+  width: 100%;
+  height: 200px;       /* increased from 150px */
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.card-body h4 { margin: 0; font-size: 1.1rem; }
+.card-body .muted { color:#6b7280; font-size:0.95rem; margin:0; }
+
+.card-foot {
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:0.5rem;
+}
+
+/* Hover */
+.carousel-card:hover {
+  transform: translateY(-6px);
+  transition: transform 250ms ease;
+}
+
+/* Responsive adjustments */
+@media (max-width:700px) {
+  .carousel-card { width:250px; }
+  .carousel-card img { height:160px; }
+}
+
+@media (max-width:420px) {
+  .carousel-card { width:200px; }
+  .carousel-card img { height:140px; }
+}
